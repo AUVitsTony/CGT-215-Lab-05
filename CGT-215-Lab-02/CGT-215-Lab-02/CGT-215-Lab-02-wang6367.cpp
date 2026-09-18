@@ -1,46 +1,56 @@
 // CGT-215-Lab-02.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
-using namespace std;
+#include <iostream> 
+using namespace std; // Lets us write cout and cin instead of std::cout and std::cin
 
 int main()
 {
-	double num1, num2; // stores two decimal numbers
-	char operation; //stores one single character
+    // Create three float variables.
+    // A and B will store the numbers entered by the user.
+    // x will store the final answer.
+    float A;
+    float B;
+    float x;
 
-	// user input
-	cout << "Enter first number: "; 
-	cin >> num1;
+    // Greeting and showing the equation we are going to solve.
+    cout << "Hello, my name is Tony and I'm going to solve the equation:" << endl;
+    cout << "Ax + B = 0" << endl;
+    cout << "For x" << endl;
+    cout << endl;
 
-	cout << "Enter an operation (+, -, *, /): ";
-	cin >> operation;
+    // Ask the user to enter a value for A.
+    cout << "Please enter a value for A: ";
+    cin >> A;
 
-	cout << "Enter second number: ";
-	cin >> num2;
+    // Ask the user to enter a value for B.
+    cout << "Please enter a value for B: ";
+    cin >> B;
 
-	// perform the operation based on user input
-	if (operation == '+') {
-		cout << "The result is: " << num1 + num2 << endl;
-		}
-	else if (operation == '-') {
-		cout << "The result is: " << num1 - num2 << endl;
-		}
-	else if (operation == '*') {
-		cout << "The result is: " << num1 * num2 << endl;
-		}
-	else if (operation == '/') {
-		if (num2 == 0) {
-			cout << "Cannot be divided by zero." << endl;
-		}
-		else {
-			cout << "The result is: " << num1 / num2 << endl;
-		}
-		}
+    cout << endl;
 
-		return 0;
+    // Show the equation again, but this time use the numbers
+    // that the user entered for A and B.
+    cout << "Solving " << A << "x + " << B << " = 0 for x..." << endl;
+
+    cout << endl;
+
+    // The original equation is:
+    // Ax + B = 0
+    //
+    // Subtract B from both sides:
+    // Ax = -B
+    //
+    // Divide both sides by A:
+    // x = -B / A
+    x = -B / A;
+
+    // Display the final answer.
+    cout << "The answer is:" << endl;
+    cout << "x = " << x << endl;
+
+    return 0; // Ends the program
 }
-
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
