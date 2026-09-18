@@ -29,20 +29,12 @@ int main()
 
     cout << endl;
 
-    // Show the equation again, but this time use the numbers
-    // that the user entered for A and B.
+    // Show the equation again, but use the numbers that the user entered for A and B.
     cout << "Solving " << A << "x + " << B << " = 0 for x..." << endl;
 
     cout << endl;
 
-    // The original equation is:
-    // Ax + B = 0
-    //
-    // Subtract B from both sides:
-    // Ax = -B
-    //
-    // Divide both sides by A:
-    // x = -B / A
+	//solving for x using the formula x = -B / A
     x = -B / A;
 
     // Display the final answer.
