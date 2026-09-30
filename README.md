@@ -1,4 +1,4 @@
-<img width="867" height="822" alt="image" src="https://github.com/user-attachments/assets/32bf2973-1106-4533-8515-05d5e53939bd" /># CGT-215 Lab 05
+# CGT-215 Lab 05
 
 This lab is a C++ program that takes text entered by the user and translates it using a custom cypher.
 
